@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/i12"
+    android:orientation="vertical"
+    tools:context="com.example.hp.myapplication.MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="1000dp"
+        android:layout_height="160dp"
+        android:src="@drawable/c4"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 1.Americano"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="#e8f5f0"
+        android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f9010515"
+            android:text="(PRICE - 50 Per Cup)"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/cup2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:onClick="inc_A"
+            android:src="@drawable/c46" />
+
+        <TextView
+            android:id="@+id/teamA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_weight="5"
+            android:text="0"
+            android:layout_marginLeft="30dp"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/notcup3"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:onClick="inc_B"
+            android:src="@drawable/c41" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center
+">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 2.Cappuccino"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="#e8f5f0"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#f9010515"
+                android:text="(PRICE - 80 Rs Per Cup)"
+                android:layout_gravity="center"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:id="@+id/cup1"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:onClick="inc_c"
+                android:src="@drawable/c46" />
+
+            <TextView
+                android:id="@+id/teamB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_weight="5"
+                android:text="0"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ffffff"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/notcup1"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:onClick="inc_d"
+                android:src="@drawable/c41" />
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:onClick="submitOrder"
+            android:background="#492424"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/prA"
+            android:textStyle="bold"
+            android:textColor="#ede5e5"
+            android:layout_marginLeft="20dp"
+
+            android:textSize="25dp"/>
+
+
+
+    </LinearLayout>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Pay now"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:onClick="fifth"
+            android:background="#492424"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+</ScrollView>
